@@ -3,6 +3,11 @@
 /**
  * Module dependencies.
  */
+ (async () => {
+ const database = require('../db');
+ const Link = require('../models/link');
+
+ await database.sync();
 
 var app = require('../app');
 var debug = require('debug')('url-shortener:server');
@@ -88,3 +93,4 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+})();

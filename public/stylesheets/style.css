@@ -19,3 +19,27 @@ form {
   border-radius: .25rem;
   text-align: center;
 }
+
+CSS
+.stats{
+  text-align: center;
+}
+
+.statsBox{
+  flex: 0 0 25%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  text-align: center;
+  margin: .5rem;
+}
+
+.statsRow{
+  display: flex;
+  justify-content: center !important;
+}
+
+.stats{
+  text-align: center;
+}
+ 
