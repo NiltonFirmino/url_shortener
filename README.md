@@ -1,7 +1,7 @@
 # url_shortener
 ## Atividade: Encurtador de URL
-Aluno: Nilton Carlos Firmino Pereira
-Curso: Pós-Graduação Lato Sensu em Desenvolvimento Mobile
-Disciplina: Desenvolvimento Back-End para Aplicações Mobile
-Modulo: 3º
+Aluno: Nilton Carlos Firmino Pereira<br>
+Curso: Pós-Graduação Lato Sensu em Desenvolvimento Mobile<br>
+Disciplina: Desenvolvimento Back-End para Aplicações Mobile<br>
+Modulo: 3º<br>
 Professor: Ramon Lummertz
