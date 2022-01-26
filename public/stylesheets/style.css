@@ -2,7 +2,15 @@
   padding: 3rem;
   text-align: center;
 }
- 
+
+.pconfig {
+  padding: 2em 2rem 1rem 5rem;
+  text-align: left;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgb(250, 255, 255);
+}
+
 .icon {
   height: 42px;
 }
@@ -25,19 +33,7 @@ CSS
   text-align: center;
 }
 
-.statsBox{
-  flex: 0 0 25%;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: .25rem;
-  text-align: center;
-  margin: .5rem;
-}
 
-.statsRow{
-  display: flex;
-  justify-content: center !important;
-}
 
 .stats{
   text-align: center;
