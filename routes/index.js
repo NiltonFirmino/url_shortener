@@ -3,12 +3,17 @@ var router = express.Router();
 const Link = require('../models/link');
 
 /**
- * 
- * @returns {resultado.url}
+ * @module Routes
  */
+
 router.get('/:code', async (req, res, next) => {
   const code = req.params.code;
   
+   /**
+   * Pega a url inserida e o codigo gerado pela função generateCode() e traz para a pagina reusltado
+   * @type {Object}
+   * @returns {urlresults}
+   */
   const resultadonew = await Link.findOne({ where: { code } });
   if (!resultadonew) return res.sendStatus(404);
  
