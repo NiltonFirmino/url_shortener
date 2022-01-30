@@ -13,6 +13,7 @@ Professor: Ramon Lummertz
  - [x] Nodemon
  - [x] Dotenv
  - [x] Jsdoc
+ - [x] bootstrap
  - [x] Deploy GoogleCloud
 
 <img  src="https://i.imgur.com/KAITolR.png">
