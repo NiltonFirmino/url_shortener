@@ -15,5 +15,5 @@ Professor: Ramon Lummertz
  - [x] Jsdoc
  - [x] Deploy GoogleCloud
 
-<img height="40" src="https://i.imgur.com/KAITolR.png">
-<img height="40" src="https://i.imgur.com/hUXahON.png">
+<img  src="https://i.imgur.com/KAITolR.png">
+<img  src="https://i.imgur.com/hUXahON.png">
