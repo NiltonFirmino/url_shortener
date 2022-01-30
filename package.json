@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx nodemon -r dotenv/config ./bin/www"
+    "start": "npx nodemon -r dotenv/config ./bin/www",
+    "generate:doc": "jsdoc -r routes"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

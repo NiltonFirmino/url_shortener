@@ -2,27 +2,30 @@ var express = require('express');
 var router = express.Router();
 const Link = require('../models/link');
 
-
+/**
+ * 
+ * @returns {resultado.url}
+ */
 router.get('/:code', async (req, res, next) => {
   const code = req.params.code;
   
-  const resultado = await Link.findOne({ where: { code } });
-  if (!resultado) return res.sendStatus(404);
+  const resultadonew = await Link.findOne({ where: { code } });
+  if (!resultadonew) return res.sendStatus(404);
  
-  await resultado.save();
+  await resultadonew.save();
  
-  res.redirect(resultado.url);
+  res.redirect(resultadonew.url);
 })
 
-/* GET home page. */
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Encurtador de URL' });
 });
 
 
 /**
- * 
- * @returns {Promise<void>}
+ * Função que cria um novo um code de 5 caracteres usando caracteres aleatórios como possibilidade
+ * @returns {text<String>}
  */
 function generateCode() {
   let text = '';
@@ -32,10 +35,16 @@ function generateCode() {
   return text;
 }
 
+
 router.post('/urlresults', async (req, res, next) => {
   const url = req.body.url;
   const code = generateCode();
 
+  /**
+   * Guarda a url inserida e o codigo gerado pela função generateCode() no banco de dados
+   * @type {Object}
+   * @returns {urlresults}
+   */
   const resultado = await Link.create({
     url,
     code
